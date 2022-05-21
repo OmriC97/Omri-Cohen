@@ -2,13 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=    <div style="border: 20px solid; padding: 2vh; margin: 22px;">
-        <h1>Execrise 1</h1>
-    </div>
+    <script src="../static/omri.js"></script>
     <span style="border: ff 3px solid gray;"> 
     </span>
-    <label for="start">Start date:</label>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="tab"><a href="home.html">Home</a></div>
+        <div class="tab"><a href="contact.html">Contact</a></div>
+    </header>
+    <div class="container">
+        <div id="currTab">Contact</div>
+
+        <div style="border: 20px solid; padding: 2vh; margin: 22px;">
+            <h1>Execrise 1</h1>
+        </div>
+
+        <label for="start">Start date:</label>
 
 <input type="date" id="start" name="trip-start"
        value="2022-04-17"
@@ -22,7 +35,7 @@
         <input type="button" value="press here"> <br>
         <label for="agree">I agree</label>
         <input type="checkbox" id="agree" name="agree"> <br>
-        <input type="submit"> <br>
+        <input type="submit" onclick="thankAlert()"> <br>
         <input type="number">
     
         
@@ -52,9 +65,19 @@
             <li><a href="home.html">home page</a></li>
         </ul>
     </nav>
-    <title>Document</title>
-</head>
-<body>
+    
+        <div class="wrapper">
+                    <div class="box a">Company</div>
+                    <div class="box b">Contact</div>
+                    <div class="box c">Country</div>
+                    <div class="box d">Check Point</div>
+                    <div class="box e">Omri Cohen</div>
+                    <div class="box f">Israel</div>
+        </div>
+
+    </div>
+
+       
     
 </body>
 </html>

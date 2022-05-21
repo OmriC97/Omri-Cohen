@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/omri.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div style="border: 20px solid; padding: 2vh; margin: 22px;">
-        <h1>Home Page</h1>
+    <header class="header">
+        <div id="tab1" onclick="changeColor('tab1')"><a href="home.html">Home</a></div>
+        <div id="tab2" onclick="changeColor('tab2')"><a href="contact.html">Contact</a></div>
+    </header>
+    <div class="container">
+        <div id="currTab">Home</div>
+        <div class="title">
+            <h1>Home Page</h1>
+        </div>
+        <img src='C:\Users\omri9\Desktop\eca40f8a-9816-4995-bbda-f69b9827ecb8.jpg' />
+        <form action="URL" method="post">
+            <br>
+            <label for="Is this kid cute?">Is this kid cute?</label> <br> 
+            <input type="text" name="Is this kid cute?" autocomplete="on" > <br>
+            <ul>
+                <li><a href="contact.html">home page</a></li>
+            </ul>
+          
+        </form>  
     </div>
-    <img src='C:\Users\omri9\Desktop\eca40f8a-9816-4995-bbda-f69b9827ecb8.jpg' />
-    <form action="URL" method="post">
-        <br>
-        <label for="Is this kid cute?">Is this kid cute?</label> <br> 
-        <input type="text" name="Is this kid cute?" autocomplete="on" > <br>
-        <ul>
-            <li><a href="contact.html">home page</a></li>
-        </ul>
-      
-    </form>  
+   <div class="animation-container">
+    <div class="coffee-header">
+        <div class="coffee-header__buttons coffee-header__button-one"></div>
+        <div class="coffee-header__buttons coffee-header__button-two"></div>
+        <div class="coffee-header__display"></div>
+        <div class="coffee-header__details"></div>
+      </div>
+      <div class="coffee-medium">
+        <div class="coffe-medium__exit"></div>
+        <div class="coffee-medium__arm"></div>
+        <div class="coffee-medium__liquid"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+        <div class="coffee-medium__cup"></div>
+      </div>
+      <div class="coffee-footer"></div>
+   </div>
+
+
+
+   
 </body>
 </html>
