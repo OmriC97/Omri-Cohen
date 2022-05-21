@@ -5,11 +5,11 @@ function thankAlert(){
 }
 
 function changeColor() {
-    var elem = window.document.getElementById('currTab');
+    elem = document.getElementById('currTab');
     console.log(elem);
     // elem.style.color = newColor;
 }
 
-changeColor();
+
 
 
