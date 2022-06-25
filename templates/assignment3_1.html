@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block page_title %}
+    {{assignment3_1}}
+    {% endblock %}
+</head>
+<body>
+{% include 'title.html' %}
+<h2>My hobbies</h2>
+{{
+    Hobbies | join(' % ')
+}}
+
+
+{% if Favorite_NBA_Players %}
+    <h2>My favorite nba players</h2>
+    {% for player in Favorite_NBA_Players: %}
+        <h3>
+            {{player}} |
+        </h3>
+    {% endfor %}
+
+{% endif %}
+
+
+</body>
+</html>
