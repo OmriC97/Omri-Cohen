@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block page_title %}
+    {{assignment3_1}}
+    {% endblock %}
+</head>
+<body>
+{% include 'title.html' %}
+
+
+<h3>Insertion form</h3>
+<form method="post" action="/assignment4/insertion">
+    <label id="id-form" for="id-form">ID</label><br/>
+    <input name="insertion-id" type="text"/><br/>
+    <label id="name-form" for="name-form">Name</label><br/>
+    <input name="insertion-name" type="text"/><br/>
+    <label id="email-form" for="name-form">Email</label><br/>
+    <input name="insertion-email" type="text"/><br/>
+    <input type="submit"/><br/>
+</form>
+
+<br/>
+<h3>Update form</h3>
+<form method="post" action="/assignment4/update">
+    <label id="id-form-Update" for="id-form">ID</label><br/>
+    <input name="Update-id" type="text"/><br/>
+    <label id="name-form-Update" for="name-form">Name</label><br/>
+    <input name="Update-name" type="text"/><br/>
+    <label id="email-form-Update" for="name-form">Email</label><br/>
+    <input name="Update-email" type="text"/><br/>
+    <input type="submit"/><br/>
+</form>
+
+<br/>
+<h3>Delete form</h3>
+<form method="post" action="/assignment4/delete">
+    <label id="id-form-delete" for="id-form">ID</label><br/>
+    <input name="delete-id" type="text"/><br/>
+    <label id="name-form-delete" for="name-form">Name</label><br/>
+    <input name="delete-name" type="text"/><br/>
+    <label id="email-form-delete" for="name-form">Email</label><br/>
+    <input name="delete-email" type="text"/><br/>
+    <input type="submit"/><br/>
+</form>
+
+
+<br/>
+<h3>List Of Users</h3>
+<form method="post" action="/assignment4/users">
+    <input type="submit"/><br/>
+</form>
+
+<br/>
+
+</body>
+</html>

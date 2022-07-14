@@ -1,7 +1,10 @@
 from flask import Flask, render_template, redirect, url_for
+from Pages.assignment4 import assignment4
 
 app = Flask(__name__)
 
+# create new blueprint -> move relevant url to assignment4 routes
+app.register_blueprint(assignment4)
 
 @app.route('/')
 def Home_page():
@@ -27,6 +30,7 @@ def assignment3_1_redirect():
 @app.route('/assignment3_1/url_for')
 def assignment3_1_url_for():
     return redirect(url_for('assignment3_1'))
+
 
 
 if __name__ == '__main__':
