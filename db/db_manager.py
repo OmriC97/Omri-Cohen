@@ -25,3 +25,4 @@ def interact_db(query, query_type: str):
         # Returns: False if the query failed, or the result of the query if it succeeded.
         query_result = cursor.fetchall()
         return_value = query_result
+        return return_value

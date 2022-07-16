@@ -10,6 +10,14 @@
     margin-right: 15px;
 }
 
+#tab1 {
+  padding-right: 10px;
+}
+
+#tab2 {
+  padding-right: 10px;
+}
+
 .tab:hover{
     cursor: pointer;
 }

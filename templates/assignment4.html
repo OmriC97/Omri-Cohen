@@ -8,7 +8,11 @@
 </head>
 <body>
 {% include 'title.html' %}
-
+    <header class="header">
+        <div id="tab1" onclick="changeColor('tab1')"><a href="/home">Home</a></div>
+        <div id="tab2" onclick="changeColor('tab2')"><a href="/contact">Contact</a></div>
+        <div id="tab3" onclick="changeColor('tab3')"><a href="/assignment4">Assignment4</a></div>
+    </header>
 
 <h3>Insertion form</h3>
 <form method="post" action="/assignment4/insertion">
@@ -25,11 +29,11 @@
 <h3>Update form</h3>
 <form method="post" action="/assignment4/update">
     <label id="id-form-Update" for="id-form">ID</label><br/>
-    <input name="Update-id" type="text"/><br/>
+    <input name="update-id" type="text"/><br/>
     <label id="name-form-Update" for="name-form">Name</label><br/>
-    <input name="Update-name" type="text"/><br/>
+    <input name="update-name" type="text"/><br/>
     <label id="email-form-Update" for="name-form">Email</label><br/>
-    <input name="Update-email" type="text"/><br/>
+    <input name="update-email" type="text"/><br/>
     <input type="submit"/><br/>
 </form>
 
@@ -38,10 +42,6 @@
 <form method="post" action="/assignment4/delete">
     <label id="id-form-delete" for="id-form">ID</label><br/>
     <input name="delete-id" type="text"/><br/>
-    <label id="name-form-delete" for="name-form">Name</label><br/>
-    <input name="delete-name" type="text"/><br/>
-    <label id="email-form-delete" for="name-form">Email</label><br/>
-    <input name="delete-email" type="text"/><br/>
     <input type="submit"/><br/>
 </form>
 
